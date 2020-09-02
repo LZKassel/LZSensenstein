@@ -1,0 +1,203 @@
+@import url(https://fonts.googleapis.com/css?family=Monserrat:400,700);
+body {
+  color: #555;
+  background-color: grey;
+  margin: 0;
+  font-family: "Monserrat",
+  sans-serif;
+}
+#header {
+  margin: 0;
+  padding: 0;
+}
+#seitenname {
+  box-shadow: 5px 10px 10px 5px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 270px;
+  background-image: url(img/head-banner.png);
+  background-position: center;
+}
+#seitenname img {
+  max-width: 1860px;
+}
+#content {
+  background-color: lightgrey;
+  padding: 10px;
+  margin: 0;
+}
+.dropdown {
+  background-color: #dfdfdf;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+}
+.drop-button {
+  width: 40px;
+  height: 35px;
+  align-items: center;
+  padding: 5px 5px;
+}
+.drop-button::selection {
+  background-color: grey;
+}
+#menu-png {
+  height: 20px;
+  width: 20px;
+}
+#drop-content {
+  border-style: solid;
+  position: absolute;
+  z-index: 1;
+  border-radius: 3px 20px 3px 20px;
+  background-color: #dfdfdf;
+}
+#drop-content a{
+  border-bottom: solid;
+  border-radius: 0 20px 0 15px;
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  color: red;
+  padding: 10px 36px;
+  text-decoration: none;
+}
+#drop-content:last-child {
+  border-bottom: none;
+}
+#container {
+  text-align: center;
+  max-width: 1650px;
+  margin: 0 50px 50px 200px;
+  padding: 0;
+  border: solid red 5px;
+  border-radius: 5px;
+  background-color: white;
+}
+#container h1 {
+  color: red;
+}
+#trainer_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  grid-gap: 1em;
+}
+#footer {
+  background-color: #2f2f2f;
+  height: 200px;
+  margin: 0;
+}
+#social-links {
+  float: right;
+  margin-right: 50px;
+  min-width: 400px;
+}
+#footer li {
+  display: block;
+  margin-top: 5px;
+}
+#footer a /* OPTIMIZE: hover nur direkt drauf nicht rechts daneben und dots weg */{
+  text-decoration: none;
+  color: red;
+  display: block;
+  margin-top: 5px;
+  padding-right: 5px;
+}
+#footer a:hover {
+  color: white;
+}
+#footer p {
+  color: #9f0000;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.carousel-container{
+  width: 60%;
+  margin: auto;
+  border: 5px solid black;
+  overflow: hidden;
+  position: relative;
+}
+.carousel-slide{
+  display: flex;
+  height: 200px;
+}
+#prevbtn{
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 5%;
+  font-size: 30PX;
+  color: white;
+  opacity: 0,5;
+  cursor: pointer;
+}
+#nextbtn{
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 5%;
+  font-size: 30PX;
+  color: white;
+  opacity: 0,5;
+  cursor: pointer;
+}
+.box{
+  margin-top: 30px;
+  padding: 40px;
+  background: #191919;
+  text-align: center;
+}
+.box h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.box input[type = "text"],.box input[type = "password"]{
+  font-weight: 400;
+  background: none;
+  border: 0;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3408db;
+  padding: 14px 10px;
+  width: 200px;
+  color: white;
+  border-radius: 24px;
+  outline: none;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+  width: 280px;
+  border-color: #2ecc71;
+}
+.box input[Type = "submit"]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  color: white;
+  border-radius: 24px;
+  cursor: pointer;
+  outline: none;
+}
+.box input[type = "submit"]:hover{
+  background: #2ecc71;
+}
+.new-acc {
+  color: white;
+  padding: 40px;
+  text-align: center;
+  background: #191919;
+}
+.new-acc a {
+  color: #2ecc71;
+}
+.new-acc a:hover {
+  color: #3408db;
+}
